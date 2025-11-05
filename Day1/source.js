@@ -5,4 +5,5 @@ console.log("hiiiiiiiii");
 // let
 // const
 
-var name = 12 //exists throughout the whole program
+var name = 12; //exists throughout the whole program
+let a = 2;
