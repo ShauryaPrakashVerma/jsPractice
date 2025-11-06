@@ -53,3 +53,11 @@
 
 // instanceof
 // works only with reference data types
+
+
+// early return
+// no need to do if else
+if (score >= 90) return "A";
+if (score >= 80) return "B";
+if (score >= 70) return "C";
+
