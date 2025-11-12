@@ -159,7 +159,16 @@ while (start != end) {
 // Print only first three odd numbers from 1 to 20. stop using break.
 
 let countOdd = 0;
-
+let start1 = 1
 while (countOdd != 3) {
-    
+    if (start1 % 2 !== 0) {
+        console.log(start);
+        countOdd++;
+    }
+    start++;
 }
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Question 18
+// Print 
