@@ -188,7 +188,7 @@
 // if enough balance then deduct
 // else print --> Insufficient balance
 
-console.log("Welcome to ATM simulator");
+alert("Welcome to ATM simulator");
 let bal = 1000;
 let chances = 3;
 let choice = prompt(
@@ -197,8 +197,7 @@ let choice = prompt(
 while (choice !== "4") {
   switch (choice) {
     case "1":
-      
-      while (chances > 0) {
+      while (chances > 0 && bal > 0) {
         let withdraw = +prompt("Enter the amount you want to withdraw: ");
         if (isNaN(withdraw) || withdraw <= 0) {
           console.log("Invalid amount entered. Please try again.");
@@ -210,7 +209,11 @@ while (choice !== "4") {
           chances--;
         }
       }
-      console.log("You can only withdraw 3 times in a day.");
+      if (bal <= 0) {
+        console.log("Insufficient balance");
+      } else {
+        console.log("You can only withdraw 3 times in a day.");
+      }
       break;
     case "2":
       let deposit = +prompt("Enter the money you want to deposit:");
