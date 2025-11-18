@@ -145,26 +145,120 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Create a recursive function to calculate the sum of digits of a number.
-function recursiveSum(num) {
-    
-}
+// let num = +prompt("Enter any number:");
+// function recursiveSum(num) {
+//     if (num === 1) {
+//         return 1;
+//     }
+//     return num * recursiveSum(num - 1);
+// }
+// let fact = recursiveSum(num);
+// console.log(fact);
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 // Create a recursive function to generate Fibonacci sequence up to n terms.
+// let numOfTerms = +prompt("Enter the number of terms you want the fibonacci series upto:");
+// function fibonacci(numOfTerms) {
+//     if (numOfTerms <= 0) {
+//         return 0;
+//     }
+//     if (numOfTerms === 1) {
+//         return 1;
+//     }
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+// }
+
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // 🔴 HARD
 
 // Convert a nested loop solution (printing matrix) into a recursion-only solution.
+// for (let i = 1; i < 5; i++){
+//     for (let j = 1; j < 5; j++){
+//         console.log("*");
+//     }
+// }
+
+// now using recursion:
+// function printRow(mat, row, col) {
+//     // If column is out of bounds → stop printing this row
+//     if (col === mat[row].length) {
+//         console.log("");
+//         return;
+//     }
+
+//     process.stdout.write(mat[row][col] + " ");
+//     printRow(mat, row, col + 1); // recursive move to next column
+// }
+
+// function printMatrix(mat, row = 0) {
+//     // If row is out of bounds → stop the entire printing
+//     if (row === mat.length) return;
+
+//     printRow(mat, row, 0); // print the entire row using recursion
+//     printMatrix(mat, row + 1); // move to next row
+// }
+
+// let matrix = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+
+// printMatrix(matrix);
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Write a program to simulate a mini calculator using switch (+, -, *, /).
+// let choice = prompt("Enter + for addition, - for subtraction, * for multiplication, / for division");
+// let num1 = +prompt("Enter first number:");
+// let num2 = +prompt("Enter second number:");
+// switch (choice) {
+//     case "+":
+//         console.log(`The sum of the numbers is ${num1 + num2}`);
+//         break;
+//     case "-":
+//         console.log(`The sum of the numbers is ${num1 - num2}`);
+//         break;
+//     case "*":
+//         console.log(`The sum of the numbers is ${num1 * num2}`);
+//         break;
+//     case "/":
+//         console.log(`The sum of the numbers is ${num1 / num2}`);
+//         break;
+//     default:
+//         console.log("Invalid choice");
+// }
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Write a recursive function to flatten a deeply nested array:
-
 // [1, [2, [3, [4]]]] → [1,2,3,4]
 
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Write a program to print the first 20 prime numbers using a loop.
+// for (let i = 1; i < 100; i++){
+//     let count = 0;
+//     for (let j = 2; j < i; j++){
+//         if (i % j === 0) {
+//             count++;
+//         }
+//     }
+//     if (count !== 0) {
+//         continue;
+//     }
+//     else {
+//         console.log(i);
+//     }
+// }
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Write a function that prints a pyramid pattern using loops:
 
@@ -172,40 +266,88 @@ function recursiveSum(num) {
 //    ***
 //   *****
 
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // -------------------------------
 // SECTION 2 — Functions
 // -------------------------------
 // 🟢 EASY
 
 // Create a function add(a,b) that returns the sum.
+// function add(a, b) {
+//     return a + b;
+// }
+
+// let sum = add(2, 3);
+// console.log(sum);
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Create a function with default parameter: greet(name="Guest").
+// function greet(name = "Guest") {``
+//     console.log(`Hi ${name}`);
+// }
+
+// greet();
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Create a function that returns the square of a number using arrow function.
+// let sqr = (num = 2) => {
+//     return num * num;
+// }
+// console.log(sqr(5));
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Write an IIFE that prints "IIFE Executed".
+// (function (){ console.log("IIFE Executed") }) ();
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // 🟡 MEDIUM
 
 // Write a function that takes rest parameters and returns their total sum.
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Write a function demonstrating destructured parameters:
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // function printUser({name, age})
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Create a higher-order function operate(a,b,callback) where:
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // callback = add or subtract
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Explain difference between:
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // parameters vs arguments
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // function hoisting vs variable hoisting
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Write a nested function and demonstrate how the inner function uses outer variables (scope chain).
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Write a function that returns another function (closure) to add a fixed number:
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // 🔴 HARD
 
@@ -221,13 +363,23 @@ function recursiveSum(num) {
 
 // arrow functions
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Create a pure function and an impure function for comparison.
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Write a function that mimics .map() functionality using callbacks.
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Implement custom debounce(fn, delay) function.
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Implement custom throttle(fn, delay) function.
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Write a closure-based counter with methods:
 
@@ -240,3 +392,5 @@ function recursiveSum(num) {
 // getValue
 
 // for (let [i, char] of [...str].entries()) {}
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
