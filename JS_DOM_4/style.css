@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  height: 300px;
+  width: 600px;
+  background: aliceblue;
+  border: 2px solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.outer{
+  width: 83%;
+  height: 20px;
+  background-color: rgb(198, 196, 196);
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+#inner{
+  width: 0%;
+  height: 100%;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.bottom{
+  width: 83%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+  width: 230px;
+  height: 60px;
+  border-radius: 40px;
+  background: black;
+  color: white;
+  font-size: 30px;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(81, 80, 80);
+}
+
+button:active{
+  scale: 1.05;
+}
+
+#num h1{
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
