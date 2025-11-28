@@ -1,0 +1,57 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+main{
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+#card{
+  height: 600px;
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+#stories{
+  width: 100%;
+  height: 17%;
+  /* background: yellow; */
+  padding: 3%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#stories::-webkit-scrollbar{
+  display: none; 
+}
+
+#stories div{
+  width: 80px;
+  height: 80px;
+  background: white;
+  border: 3px solid red;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 5px;
+  overflow: hidden
+}
+
+#stories div>img{
+  width: 80px;
+}
