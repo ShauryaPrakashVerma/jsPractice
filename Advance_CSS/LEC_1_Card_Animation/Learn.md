@@ -47,3 +47,16 @@
         
     - To use the animation: 
         animation: <Name_Of_the_animation> <duration> <repetition> ;
+
+
+    - after animation is finished the div returns to its initial state,to change this set
+        - <repetition> = forwards; retains the lastt state of the animation
+
+
+
+
+    - properties which can't be animated (called Discrete properties [read about them])
+            - display
+            - visibility
+
+            
