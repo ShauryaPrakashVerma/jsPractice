@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@property --rotate{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes borderAnimate{
+    from{
+        --rotate: 0deg;
+    }
+    to{
+        --rotate: 360deg;
+    }
+}
+
+
+
+.box{
+    max-width: 325px;
+    padding-inline: 10px;    /* padding from left and right only */
+    padding-bottom: 10px;
+    height: 450px;
+    background: linear-gradient(#040108) padding-box,
+    conic-gradient(from var(--rotate),#040108,#0ac4fe,#040108) border-box;
+    /* can create multiple gradients in background, the later one will appear on top of the first one */
+    
+    border-radius: 10px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 5px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 60px #0ac4fe;
+
+    animation: borderAnimate 1s;
+    animation-iteration-count: infinite;
+}
+
+.box img{
+    width: 100%;
+}
+
+.bo
