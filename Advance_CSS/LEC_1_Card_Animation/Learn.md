@@ -54,7 +54,6 @@
 
 
 
-
     - properties which can't be animated (called Discrete properties [read about them])
             - display
             - visibility
