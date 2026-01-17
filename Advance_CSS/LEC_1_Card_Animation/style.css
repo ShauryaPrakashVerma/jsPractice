@@ -30,5 +30,5 @@ body{
 .box{
     height: 400px;
     width: 300px;
-    background: red;
+    animation: changeBackgroundColor 5s forwards;
 }
