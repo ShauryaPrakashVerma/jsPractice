@@ -47,11 +47,23 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    border: 5px solid rgba(255, 255, 255, 0);
-    box-shadow: 0 0 60px #0ac4fe;
+    border: 0px solid rgba(255, 255, 255, 0);
 
     animation: borderAnimate 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;  /* how many times the animation will run */
+    animation-timing-function: linear;    /* ease in  , will move linearly i.e at same speed throughout. Can also change it to cubic bezier, which will move at varying speeds.*/
+    animation-play-state: paused;     /* determines wether the animation is "running" or "paused" */
+    transition: all 3.3s linear;
+    box-shadow: 0 0 0px #0ac4fe;
+    text-shadow: 0 0 0px white;
+}
+
+.box:hover{
+    animation-play-state: running;
+    border-width: 5px;
+    box-shadow: 0 0 60px #0ac4fe;
+    color: #0ac4fe;
+    text-shadow: 0 0 20px #0ac4fe;
 }
 
 .box img{
